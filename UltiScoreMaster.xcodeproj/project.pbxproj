@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0FAB7FDD2B5AC51700BFB974 /* UltiScoreMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB7FDC2B5AC51700BFB974 /* UltiScoreMasterApp.swift */; };
-		0FAB7FDF2B5AC51700BFB974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB7FDE2B5AC51700BFB974 /* ContentView.swift */; };
 		0FAB7FE12B5AC53100BFB974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB7FE02B5AC53100BFB974 /* Assets.xcassets */; };
 		0FAB7FE42B5AC53100BFB974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB7FE32B5AC53100BFB974 /* Preview Assets.xcassets */; };
 		0FAB7FEB2B5C9DBF00BFB974 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB7FEA2B5C9DBF00BFB974 /* GoogleService-Info.plist */; };
@@ -39,15 +38,20 @@
 		0FAB801E2B5C9FD300BFB974 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FAB801D2B5C9FD300BFB974 /* FirebaseRemoteConfigSwift */; };
 		0FAB80202B5C9FD300BFB974 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FAB801F2B5C9FD300BFB974 /* FirebaseStorage */; };
 		0FAB80222B5C9FD300BFB974 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0FAB80212B5C9FD300BFB974 /* FirebaseStorageCombine-Community */; };
+		0FAB80242B5CB9E700BFB974 /* MainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80232B5CB9E700BFB974 /* MainViews.swift */; };
+		0FAB80262B5CBB0F00BFB974 /* AppViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */; };
+		0FAB80282B5CBCAC00BFB974 /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80272B5CBCAC00BFB974 /* AppModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FAB7FD92B5AC51700BFB974 /* UltiScoreMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltiScoreMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAB7FDC2B5AC51700BFB974 /* UltiScoreMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltiScoreMasterApp.swift; sourceTree = "<group>"; };
-		0FAB7FDE2B5AC51700BFB974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FAB7FE02B5AC53100BFB974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FAB7FE32B5AC53100BFB974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FAB7FEA2B5C9DBF00BFB974 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FAB80232B5CB9E700BFB974 /* MainViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViews.swift; sourceTree = "<group>"; };
+		0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModels.swift; sourceTree = "<group>"; };
+		0FAB80272B5CBCAC00BFB974 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				0FAB7FDC2B5AC51700BFB974 /* UltiScoreMasterApp.swift */,
-				0FAB7FDE2B5AC51700BFB974 /* ContentView.swift */,
+				0FAB80232B5CB9E700BFB974 /* MainViews.swift */,
+				0FAB80272B5CBCAC00BFB974 /* AppModels.swift */,
+				0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */,
 				0FAB7FE02B5AC53100BFB974 /* Assets.xcassets */,
 				0FAB7FEA2B5C9DBF00BFB974 /* GoogleService-Info.plist */,
 				0FAB7FE22B5AC53100BFB974 /* Preview Content */,
@@ -227,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FAB7FDF2B5AC51700BFB974 /* ContentView.swift in Sources */,
 				0FAB7FDD2B5AC51700BFB974 /* UltiScoreMasterApp.swift in Sources */,
+				0FAB80262B5CBB0F00BFB974 /* AppViewModels.swift in Sources */,
+				0FAB80242B5CB9E700BFB974 /* MainViews.swift in Sources */,
+				0FAB80282B5CBCAC00BFB974 /* AppModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
