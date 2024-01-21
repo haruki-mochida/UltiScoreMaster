@@ -17,3 +17,21 @@ class HomeViewModel: ObservableObject {
         // Implement deletion logic
     }
 }
+
+class MatchSetupViewModel: ObservableObject {
+    @Published var teamWhite: String = ""
+    @Published var teamBlack: String = ""
+    @Published var matchName: String = "Practice Match"
+    @Published var matchDate: Date = Date()
+    @Published var finalScore: Int = 7
+
+    // Function to handle the saving of match settings
+    func saveMatchDetails() {
+        let match = Match(matchDate: matchDate,
+                          teamWhite: teamWhite,
+                          teamBlack: teamBlack,
+                          matchName: matchName,
+                          finalScore: finalScore)
+        // Logic to save this data to Firestore or your preferred database
+    }
+}
