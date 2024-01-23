@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var viewModel = HomeViewModel()
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -22,9 +22,18 @@ struct HomeScreen: View {
                     .onDelete(perform: viewModel.deleteMatch)
                 }
                 .navigationTitle("Matches")
-
+                
                 Spacer() // Creates space between the list and the menu bar
 
+                // メモアイコンのボタン（試合設定画面へのナビゲーションリンク）
+                NavigationLink(destination: MatchSettingsView(viewModel: MatchSetupViewModel())) {
+                    Image(systemName: "pencil") // ここでシステムアイコンを使用
+                        .resizable()
+                        .frame(width: 30, height: 30) // アイコンのサイズ調整
+                        .padding()
+                }
+
+                // メニューバーの表示
                 MenuBarView() // Include the Menu Bar here
             }
         }
