@@ -35,3 +35,29 @@ class MatchSetupViewModel: ObservableObject {
         // Logic to save this data to Firestore or your preferred database
     }
 }
+
+class ScoreEntryViewModel: ObservableObject {
+    @Published var matchTimer = 0 // Timer for the match in seconds
+    @Published var isTimerRunning = false
+    @Published var timelineEntries: [TimelineEntry] = []
+
+    struct TimelineEntry {
+        let teamName: String
+        let time: Int
+        let assist: String
+        let goal: String
+        let notes: String
+    }
+
+    // Function to start or stop the match timer
+    func toggleTimer() {
+        isTimerRunning.toggle()
+        if isTimerRunning {
+            // Start the timer
+        } else {
+            // Stop the timer
+        }
+    }
+
+    // Add other functionalities as required...
+}
