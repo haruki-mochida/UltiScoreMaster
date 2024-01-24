@@ -61,3 +61,35 @@ class ScoreEntryViewModel: ObservableObject {
 
     // Add other functionalities as required...
 }
+
+class ScoreModalViewModel: ObservableObject {
+    @Published var assist: String = ""
+    @Published var goal: String = ""
+    @Published var memo: String = ""
+
+    // Add any additional logic needed for handling the score submission
+    func submitScore() {
+        // Logic to handle submission (e.g., update the ScoreEntryViewModel)
+    }
+
+    func cancel() {
+        // Logic to handle cancellation (e.g., reset fields or close modal)
+    }
+}
+
+class TOModalViewModel: ObservableObject {
+    @Published var missType: String = ""
+    @Published var defensivePlay: String = ""
+    @Published var notes: String = ""
+
+    var missTypeOptions = ["Type 1", "Type 2", "Type 3", "Type 4", "Type 5", "Type 6"]
+    var defensivePlayOptions = ["Play 1", "Play 2", "Play 3", "Play 4", "Play 5"]
+
+    func submitTurnover() {
+        // Logic to handle turnover submission (e.g., update the ScoreEntryViewModel)
+    }
+
+    func cancelTurnover() {
+        // Logic to handle cancellation (e.g., reset fields or close modal)
+    }
+}
