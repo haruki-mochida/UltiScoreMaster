@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+
 class HomeViewModel: ObservableObject {
     @Published var matches: [Match] = []
 
@@ -37,9 +39,13 @@ class MatchSetupViewModel: ObservableObject {
 }
 
 class ScoreEntryViewModel: ObservableObject {
-    @Published var matchTimer = 0 // Timer for the match in seconds
+    @Published var matchTimer = 0
     @Published var isTimerRunning = false
     @Published var timelineEntries: [TimelineEntry] = []
+    @Published var teamScores = [1: 0, 2: 0]
+
+    private var timer: Timer?
+    private var cancellables = Set<AnyCancellable>()
 
     struct TimelineEntry {
         let teamName: String
@@ -49,19 +55,30 @@ class ScoreEntryViewModel: ObservableObject {
         let notes: String
     }
 
-    // Function to start or stop the match timer
     func toggleTimer() {
         isTimerRunning.toggle()
         if isTimerRunning {
-            // Start the timer
+            startTimer()
         } else {
-            // Stop the timer
+            stopTimer()
         }
     }
 
-    // Add other functionalities as required...
-}
+    func incrementScore(for team: Int) {
+        teamScores[team, default: 0] += 1
+    }
 
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.matchTimer += 1
+        }
+    }
+
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+}
 class ScoreModalViewModel: ObservableObject {
     @Published var assist: String = ""
     @Published var goal: String = ""
