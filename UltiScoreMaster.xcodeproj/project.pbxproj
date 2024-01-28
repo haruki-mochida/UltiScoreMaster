@@ -41,6 +41,7 @@
 		0FAB80242B5CB9E700BFB974 /* MainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80232B5CB9E700BFB974 /* MainViews.swift */; };
 		0FAB80262B5CBB0F00BFB974 /* AppViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */; };
 		0FAB80282B5CBCAC00BFB974 /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB80272B5CBCAC00BFB974 /* AppModels.swift */; };
+		0FAB802C2B612B6A00BFB974 /* MatchViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB802B2B612B6A00BFB974 /* MatchViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		0FAB80232B5CB9E700BFB974 /* MainViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViews.swift; sourceTree = "<group>"; };
 		0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModels.swift; sourceTree = "<group>"; };
 		0FAB80272B5CBCAC00BFB974 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModels.swift; sourceTree = "<group>"; };
+		0FAB802B2B612B6A00BFB974 /* MatchViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				0FAB7FDC2B5AC51700BFB974 /* UltiScoreMasterApp.swift */,
 				0FAB80232B5CB9E700BFB974 /* MainViews.swift */,
+				0FAB802B2B612B6A00BFB974 /* MatchViews.swift */,
 				0FAB80272B5CBCAC00BFB974 /* AppModels.swift */,
 				0FAB80252B5CBB0F00BFB974 /* AppViewModels.swift */,
 				0FAB7FE02B5AC53100BFB974 /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FAB7FDD2B5AC51700BFB974 /* UltiScoreMasterApp.swift in Sources */,
+				0FAB802C2B612B6A00BFB974 /* MatchViews.swift in Sources */,
 				0FAB80262B5CBB0F00BFB974 /* AppViewModels.swift in Sources */,
 				0FAB80242B5CB9E700BFB974 /* MainViews.swift in Sources */,
 				0FAB80282B5CBCAC00BFB974 /* AppModels.swift in Sources */,
